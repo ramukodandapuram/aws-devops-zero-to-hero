@@ -4,4 +4,4 @@ set -e
 # Stop and removing the running container (if any)
 
 containerid = `docker ps | awk -F " " '{print $1}'`
-sudo docker rm -f $containerid
+docker rm -f $containerid
